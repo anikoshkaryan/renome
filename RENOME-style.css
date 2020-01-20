@@ -1,0 +1,994 @@
+@font-face {
+    font-family: 'AXIS Extra';
+    src: url('fonts/AXIS-ExtraBold.eot');
+    src: url('fonts/AXIS-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AXIS-ExtraBold.woff2') format('woff2'),
+    url('fonts/AXIS-ExtraBold.woff') format('woff'),
+    url('fonts/AXIS-ExtraBold.ttf') format('truetype'),
+    url('fonts/AXIS-ExtraBold.svg#AXIS-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Bold.eot');
+    src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('fonts/Montserrat-Bold.woff') format('woff'),
+    url('fonts/Montserrat-Bold.ttf') format('truetype'),
+    url('fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Streetwear';
+    src: url('fonts/Streetwear.eot');
+    src: url('fonts/Streetwear.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Streetwear.woff2') format('woff2'),
+    url('fonts/Streetwear.woff') format('woff'),
+    url('fonts/Streetwear.ttf') format('truetype'),
+    url('fonts/Streetwear.svg#Streetwear') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('fonts/Montserrat-Regular.woff') format('woff'),
+    url('fonts/Montserrat-Regular.ttf') format('truetype'),
+    url('fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.font-brown {
+    color: #985e5b;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*General End*/
+/*Header*/
+header {
+    background: #ffff;
+    color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+nav {
+    width: 40px;
+    font-family: 'Montserrat-bold', sans-serif;
+    order: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+
+}
+.card span {
+    font-family: sans-serif;
+}
+nav ul {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 60%;
+    top: 84px;
+    right: 0;
+    background: #ffffffe6;
+    font-size: 40px;
+    transition: all 0.5s;
+
+}
+
+.main-nav.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav li {
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+nav li:hover {
+    color: #985e5b;
+}
+
+.search-tools {
+    width: 70%;
+}
+
+.search-tools ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+
+.search-tools ul li {
+    margin-left: 10px;
+}
+
+svg:hover {
+    fill: #985e5b;
+}
+
+
+.search svg {
+    width: 15px;
+    transition: all 0.3s;
+
+}
+
+.card svg {
+    width: 15px;
+    transition: all 0.3s;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.hamburger-menu {
+    display: block;
+
+}
+
+.hamburger-menu.open {
+    position: fixed;
+    top: 25px;
+}
+
+.hamburger-menu-line {
+    height: 3px;
+    width: 40px;
+    background: black;
+    display: block;
+    margin: 5px 0;
+    transition: all 0.8s;
+}
+
+.hamburger-menu.open .hamburger-menu-line:first-child {
+    transform: translate(0, 7px) rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-menu-line:nth-child(2) {
+    display: none;
+}
+
+.hamburger-menu.open .hamburger-menu-line:last-child {
+    transform: rotate(-45deg);
+}
+
+/*Header End*/
+
+/*Section Top*/
+.top {
+    background: url("pictures/egg.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.top-content {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    transform: translate(50%, -50%);
+}
+
+.big-title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 30px;
+}
+
+.top::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #0000004d;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+/*Section Top End*/
+
+/*Section About*/
+
+.about-renome-content {
+    width: 80%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 850px;
+    padding: 80px 0;
+
+}
+
+.about-renome-pictures {
+    position: relative;
+    width: 45%;
+}
+
+.about-renome-info {
+    width: 35%;
+}
+
+.font-axis {
+    font-family: 'AXIS', sans-serif;
+    color: #1e2633;
+
+}
+
+.middle {
+    margin: 15px 0;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.about-renome-desc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #404040;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.house1 {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.house2 {
+    width: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*Section About End*/
+
+/*Section Gallery*/
+.gallery {
+    background: #f7f7f7;
+    padding: 80px 0;
+}
+
+.gallery-content {
+    width: 80%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.gallery-photos {
+    width: 40%;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+
+}
+
+.gallery-photos img {
+    display: block;
+    margin: 3px;
+
+}
+
+/*Section Gallery End*/
+
+/*Section Menu*/
+.menu-content {
+    width: 80%;
+    min-height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 850px;
+
+}
+
+.menu-info {
+    width: 35%;
+    text-align: right;
+}
+
+
+.menu-desc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #404040;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.menu-pictures {
+    position: relative;
+    width: 45%;
+}
+
+.olive {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.apple {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.menu-sections-content {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8%;
+    transition: all 0.3s;
+    min-height: 40px;
+}
+
+.menu-sections-des {
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.menu-sections-content p:hover {
+    color: #985e5b;
+    border-bottom: 2px solid #985e5b;
+    cursor: pointer;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #ababab;
+}
+
+/*Section Menu End*/
+
+/*Section Menu-dishes */
+.menu-dishes-content {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.menu-dishes-items {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    line-height: 30px;
+
+}
+
+.title {
+    color: #1e2633;
+    font-size: 22px;
+    width: 80px;
+    padding: 60px 0 0 128px;
+    font-family: 'Streetwear', sans-serif;
+}
+
+.title-desc {
+    flex-grow: 1;
+    margin: 0 50px;
+}
+
+.menu-desc {
+    color: #404040;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+}
+
+.small-title {
+    color: #1e2633;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 25px;
+}
+
+.font-gray {
+    color: #dcdee0;
+}
+
+.menu-dishes-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 40px;
+
+}
+
+.menu-dishes-item-picture {
+    transition: all 0.3s;
+    position: relative;
+}
+
+.menu-dishes-item-picture::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu-dishes-item-picture:hover:before {
+    background: url("pictures/hover on menu image.png") no-repeat;
+}
+
+/*Section Menu-dishes End*/
+
+/*Section Perfect Place*/
+.perfect-place {
+    background: #f7f7f7;
+    padding: 30px 0;
+}
+
+.perfect-place-content {
+    width: 60%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.perfect-place-title {
+    width: 25%;
+    color: #1e2633;
+    font-size: 25px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-align: center;
+}
+
+.author {
+    font-size: 12px;
+    font-family: 'Axis', sans-serif;
+}
+
+.perfect-place-picture {
+    transform: translate(0, -15%);
+}
+
+
+/*Section Perfect Place End*/
+
+/*reservations*/
+.reservations {
+    padding: 80px 0;
+}
+
+.reservations-content {
+    width: 80%;
+    min-height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.reservations-pictures {
+    position: relative;
+    width: 45%;
+}
+
+.dish {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.steak {
+    width: 80%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.reservations-info {
+    width: 35%;
+}
+
+.reservations-desc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #404040;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+
+.make-reservation {
+    padding: 40px 0;
+}
+
+.make-reservation-content {
+    width: 60%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.make-reservation-title {
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 20px;
+    color: #1e2633;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.reservation-calendar select {
+    width: 150px;
+    border: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #1e2633;
+    border-bottom: 2px solid #f5f7fa;
+    background: url("pictures/arrow down.png") no-repeat right;
+    margin-left: 10px;
+    padding: 15px 0;
+}
+
+.reservation-time select {
+    width: 150px;
+    border: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #1e2633;
+    border-bottom: 2px solid #f5f7fa;
+    background: url("pictures/arrow down.png") no-repeat right;
+    margin-left: 10px;
+}
+
+.reservation-people-number select {
+    width: 150px;
+    border: none;
+    font-size: 15px;
+    -webkit-appearance: none;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #1e2633;
+    border-bottom: 2px solid #f5f7fa;
+    background: url("pictures/arrow down.png") no-repeat right;
+    margin-left: 10px;
+}
+
+.reservations-btn {
+    margin: 60px auto 0;
+    padding: 20px 45px;
+    border: none;
+    background: #1e2633;
+    display: block;
+    font-size: 15px;
+    color: white;
+    font-family: 'Montserrat-bold', sans-serif;
+}
+
+/*Reservations End*/
+
+/* section lunch*/
+.lunch {
+    background: #f7f7f7;
+    padding: 80px 0;
+}
+
+.lunch-content {
+    width: 80%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: 0 auto 15px;
+    max-width: 850px;
+}
+
+.lunch-title {
+    width: 30%;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.lunch-big-title {
+    font-family: 'AXIS', sans-serif;
+    color: #1e2633;
+    font-size: 50px;
+}
+
+.lunch-small-title {
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    color: #985e5b;
+}
+
+.lunch-pictures {
+    width: 70%;
+    margin-top: 20px;
+}
+
+.lunch-images {
+    position: relative;
+    min-height: 245px;
+}
+
+.lunch-image-container img {
+    width: 100%;
+    display: block;
+
+}
+
+.lunch-image-container {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+}
+
+.big-lunch {
+    z-index: 5;
+
+}
+
+.medium-lunch {
+    z-index: 4;
+    left: 60px;
+    width: 65%;
+    height: 90%;
+    opacity: 0.7;
+
+}
+
+.small-lunch {
+    z-index: 3;
+    left: 150px;
+    width: 55%;
+    height: 80%;
+    opacity: 0.6;
+
+}
+
+.very-small {
+    z-index: 2;
+    left: 205px;
+    width: 50%;
+    height: 70%;
+    opacity: 0.5;
+
+}
+
+.lunch-names {
+    width: 70%;
+    margin: 8px 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bread {
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #1e2633;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.day {
+    font-size: 20px;
+    color: #dcdee0;
+    font-family: 'Streetwear', sans-serif;
+}
+
+/* section lunch end*/
+
+/*Section contact */
+.contact {
+    padding: 80px 0;
+}
+
+.contact-content {
+    width: 80%;
+    min-height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 850px;
+
+}
+
+.contact-info {
+    width: 35%;
+    text-align: right;
+}
+
+
+.contact-desc {
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #404040;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.contact-pictures {
+    position: relative;
+    width: 45%;
+}
+
+.sunny-side-up {
+    width: 90%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.pineapple {
+    width: 90%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/*Section contact  End*/
+
+/*Contact-details*/
+.contact-details {
+    padding: 40px 0;
+}
+
+.contact-details-content {
+    width: 80%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.message {
+    width: 60%;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.form-container input {
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+    color: #1e2633;
+    border-bottom: 1px solid #ababab;
+    outline: none;
+}
+
+.input-field {
+    width: 50%;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+}
+
+.message-selector {
+    width: 50%;
+    padding: 0 8px;
+    box-sizing: border-box;
+
+}
+
+.message-selector select {
+    border: none;
+    border-bottom: 1px solid #ababab;
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+}
+
+.message-area {
+    width: 80%;
+    padding: 0 8px;
+}
+
+.message-area textarea {
+    border: none;
+    border-bottom: 1px solid #ababab;
+    padding: 15px 0;
+    width: 100%;
+    outline: none;
+}
+
+.message-btn button {
+    width: auto;
+    background: #f5f7fa;
+    border: none;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    color: #1e2633;
+    padding: 10px 20px;
+
+}
+
+.message {
+    width: 60%;
+}
+
+.message-title {
+    font-size: 20px;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #985e5b;
+    margin: 15px 0;
+}
+
+.contact-details-tools {
+    margin-left: 10px;
+}
+
+.contact-tools-title {
+    font-size: 20px;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #985e5b;
+    margin: 15px 0;
+}
+
+.phone {
+    margin: 15px 0;
+}
+
+.tool {
+    color: #985e5b;
+    font-family: 'AXIS', sans-serif;
+    font-size: 15px;
+}
+
+.tool-info {
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 12px;
+    color: #1e2633;
+}
+
+/*Contact-details end*/
+
+/*Footer*/
+footer {
+    background: #edeff2;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.copyright {
+    font-family: 'AXIS', sans-serif;
+    font-size: 12px;
+    color: #1e2633;
+}
+
+.follow {
+    font-size: 12px;
+    font-family: 'Montserrat-bold', sans-serif;
+    color: #1e2633;
+}
+
+.renome-sources {
+    display: flex;
+    align-items: center;
+
+}
+
+.renome-sources div {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.renome-sources a {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.renome-sources img {
+    height: 100%;
+}
+
+/*Footer end*/

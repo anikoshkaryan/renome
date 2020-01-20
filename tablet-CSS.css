@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: 'Streetwear';
+    src: url('fonts/Streetwear.eot');
+    src: url('fonts/Streetwear.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Streetwear.woff2') format('woff2'),
+    url('fonts/Streetwear.woff') format('woff'),
+    url('fonts/Streetwear.ttf') format('truetype'),
+    url('fonts/Streetwear.svg#Streetwear') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Header*/
+
+nav ul {
+    background: palevioletred;
+    font-family:'Streetwear', sans-serif ;
+}
+/*Header End*/
+/*Section Top*/
+.top {
+    min-height: 50vh;
+}
+/*Section Top End*/
+
+/*Section About*/
+.about-renome-desc {
+    line-height: 20px;
+    font-size: 15px;
+}
+.about-renome-info {
+    width: 50%;
+    margin-left: 30px;
+}
+.about-renome-content {
+    min-height: 40vh;
+}
+/*Section About End*/
+
+/*Section Gallery*/
+.gallery-content {
+    flex-wrap: wrap;
+    min-height: 50vh;
+}
+.gallery-photos {
+    width: 100%;
+}
+/*Section Gallery End*/
+
+/*Section Menu*/
+.menu-content {
+    min-height: 30vh;
+}
+.menu-sections-content {
+    width: 60%;
+}
+.menu-dishes-content {
+    width: 90%;
+}
+.menu-dishes-items {
+    padding: 0;
+}
+
+
+.title {
+    width: 100%;
+}
+/*Section Menu End*/
+
+
+/*Section Perfect Place*/
+.perfect-place-content{
+    min-height: 50vh;
+}
+.perfect-place-title{
+     width: 50%;
+}
+.perfect-place-picture {
+    margin-left: 40px;
+    transform: none;
+}
+
+/*Section Perfect Place*/
+
+/*reservations*/
+.reservations-info {
+    width: 50%;
+    margin-left: 20px;
+}
+.reservations-desc {
+    line-height: 25px;
+    font-size: 15px;
+}
+.reservations-content {
+    min-height: 30vh;
+}
+.make-reservation-content {
+    flex-wrap: wrap;
+}
+.make-reservation-content > div {
+    width: 100%;
+    margin: 20px 0;
+}
+.make-reservation-content select {
+    width: 90%;
+    vertical-align: bottom;
+}
+
+/*Reservations End*/
+
+/* section lunch*/
+.lunch-content {
+    min-height: 30vh;
+    flex-wrap: wrap;
+}
+
+.lunch-image-container{
+    height: 90%;
+}
+.lunch {
+    padding: 10px 0;
+}
+.lunch-title {
+    padding: 20px;
+}
+
+/* section lunch end*/
+
+/*Section contact */
+.contact {
+    padding: 0;
+}
+.contact-content {
+    min-height: 30vh;
+}
+.contact-details-content {
+    min-height: 30vh;
+    flex-wrap: wrap;
+}
+
+/*Section contact  End*/
+
+/*Contact-details*/
+.message {
+    width: 100%;
+}
+.contact-details-tools {
+    width: 100%;
+}
+.contact-details-tools {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.contact-tools-title {
+    width: 100%;
+    text-align: center;
+}
+
+/*Contact-details end*/

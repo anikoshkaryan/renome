@@ -1,0 +1,335 @@
+/*Header*/
+
+nav ul {
+    background: violet;
+    width: 60%;
+}
+
+.search-tools ul li {
+    margin: 0 10px;
+
+}
+/*Header End*/
+
+
+/*Section Top*/
+.top {
+    min-height: 30vh;
+}
+
+.big-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 15px;
+}
+/*Section Top End*/
+
+/*Section About*/
+.about-renome-desc {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
+.about-renome-info {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+.about-renome-pictures{
+    width: 100%;
+    height: 345px;
+    order: 1;
+}
+.about-renome-content {
+  min-height: 20vh;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.middle{
+    margin: 0;
+}
+/*Section About End*/
+
+/*Section Gallery*/
+.gallery{
+    padding: 30px 0;
+}
+.gallery-content {
+    flex-wrap: wrap;
+    min-height: 30vh;
+}
+
+.gallery-titles{
+    margin-bottom: 30px;
+}
+.gallery-photos {
+    width: 100%;
+}
+.gallery-photos>div{
+    width: 48%;
+    margin: 2px;
+}
+.gallery-photos img {
+    width: 100%;
+    margin: 0;
+}
+/*Section Gallery End*/
+
+/*Section Menu*/
+.menu-content {
+    min-height: 20vh;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.menu-info{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.menu-desc {
+    line-height: 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+.menu-pictures{
+    width: 100%;
+    height: 315px;
+
+}
+.menu-sections-content {
+   width: 90%;
+}
+.menu-dishes-content {
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+}
+/*Section Menu End*/
+
+/*Section Menu-dishes */
+
+.menu-desc{
+    font-size: 16px;
+}
+.title{
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+}
+.menu-dishes-item{
+    flex-wrap: wrap;
+}
+
+.menu-dishes-item::after{
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, black, transparent);
+    display: block;
+    margin: 30px auto 0;
+}
+.price{
+    width: 100%;
+    text-align: right;
+}
+    /*Section Menu-dishes End*/
+
+
+/*Section Perfect Place*/
+.perfect-place-content{
+    min-height: 50vh;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+.perfect-place-title{
+    width: 100%;
+}
+.perfect-place-picture{
+    width: 100%;
+    margin: 10px 0;
+}
+
+.cafe{
+    width: 100%;
+}
+
+/*Section Perfect Place End*/
+
+
+/*reservations*/
+.reservations{
+    padding: 0;
+}
+.reservations-info {
+    width: 100%;
+    margin-left: 0;
+    order: -1;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.reservations-desc {
+    line-height: 20px;
+    font-size: 20px;
+
+}
+.reservations-content {
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+.make-reservation-content {
+    flex-wrap: wrap;
+    width: 80%;
+}
+.make-reservation-content > div {
+    width: 100%;
+    margin: 20px 0;
+}
+.make-reservation-content select {
+    width: 85%;
+    vertical-align: super;
+    outline: none;
+}
+.reservations-pictures{
+    width: 100%;
+    height: 300px;
+}
+/*Reservations End*/
+
+/* section lunch*/
+.lunch-content {
+    min-height: 20vh;
+}
+
+.lunch-images{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    position: static;
+    justify-content: center;
+    align-items: center;
+}
+.lunch-pictures{
+    width: 100%;
+}
+.lunch-image-container{
+   transform: none;
+    width: 48%;
+    position: static;
+    opacity: 1;
+    margin: 1px;
+}
+.lunch {
+    padding: 8px 0;
+}
+.lunch-title {
+    width: 100%;
+    padding: 0;
+}
+.lunch-names{
+    width: 100%;
+}
+/* section lunch end*/
+
+
+/*Section contact */
+.contact {
+    padding: 0;
+}
+.contact-content {
+    min-height: 20vh;
+    flex-wrap: wrap;
+   padding-top: 20px;
+}
+.contact-info{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.contact-desc {
+    line-height:20px;
+    font-size: 16px;
+}
+.contact-pictures{
+    width: 100%;
+    min-height: 315px;
+}
+.contact-details-content {
+    min-height: 20vh;
+    flex-wrap: wrap;
+}
+
+/*Section contact  End*/
+
+/*Contact-details*/
+
+.input-field{
+    width: 100%;
+}
+
+.form-container input{
+    padding: 20px 0;
+}
+.message-selector{
+    width: 100%;
+}
+
+.message-area{
+    width: 100%;
+}
+
+.message-btn{
+    display: block;
+    margin: 20px auto;
+
+}
+
+.message-btn  button{
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.tools-container{
+    width: 100%;
+    text-align: center;
+}
+    /*Contact-details End*/
+
+
+/*footer*/
+
+.footer-content{
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.copyright{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+.renome-sources{
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.follow{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/*footer End*/
