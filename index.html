@@ -22,25 +22,25 @@
         <nav>
             <ul class="main-nav">
                 <li>
-                    <a href="#" class="font-brown">HOME</a>
+                    <a href="#home" class="font-brown">HOME</a>
                 </li>
                 <li>
-                    <a href="#">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#">MENU</a>
+                    <a href="#gallery">GALLERY</a>
                 </li>
                 <li>
-                    <a href="#">RESERVATIONS</a>
+                    <a href="#menu">MENU</a>
                 </li>
                 <li>
-                    <a href="#">BLOG</a>
+                    <a href="#reservations">RESERVATIONS</a>
                 </li>
                 <li>
-                    <a href="#">SHOP</a>
+                    <a href="#blog">BLOG</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
             <div class="hamburger-menu">
@@ -74,7 +74,7 @@
     </div>
 </header>
 <main>
-    <section class="top">
+    <section class="top" id="home">
         <div class="top-content">
             <div class="top-title">
                 <span class="big-title">made with love</span> <br>
@@ -83,7 +83,7 @@
             </div>
         </div>
     </section>
-    <section class="about-renome">
+    <section class="about-renome" id="about">
         <div class="about-renome-content">
             <div class="about-renome-pictures">
                 <img src="pictures/house%201.png" alt="" class="house1">
@@ -105,7 +105,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery" >
         <div class="gallery-content">
             <div class="gallery-titles">
                 <h2 class="font-axis">gallery</h2>
@@ -133,7 +133,7 @@
             </div>
         </div>
     </section>
-    <section class="menu">
+    <section class="menu" >
         <div class="menu-content">
             <div class="menu-info">
                 <h2 class="font-axis ">menu</h2>
@@ -164,14 +164,14 @@
 
         </div>
     </section>
-    <section class="menu-dishes">
+    <section class="menu-dishes" id="menu">
         <div class="menu-dishes-content">
 
             <div class="menu-dishes-items">
                 <div class="title">
                     <span>Appetisers</span>
                 </div>
-                <div class="menu-dishes-item">
+                <div class="menu-dishes-item" data-picture="pictures/chicken-wings.jpg">
                     <div class="menu-dishes-item-picture">
                         <img src="pictures/Chicken%20wings.jpg" alt="">
                     </div>
@@ -407,7 +407,7 @@
             </div>
         </div>
     </section>
-    <section class="reservations">
+    <section class="reservations" id="reservations">
         <div class="reservations-content">
             <div class="reservations-pictures">
                 <img src="pictures/cafe%20dish.png" class="dish" alt="">
@@ -472,7 +472,7 @@
             </div>
         </div>
     </section>
-    <section class="lunch">
+    <section class="lunch" id="blog">
         <div class="lunch-content">
             <div class="lunch-title">
                 <span class="lunch-big-title">lunch</span> <br>
@@ -513,7 +513,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-details">
+    <section class="contact-details" id="contact">
         <div class="contact-details-content">
             <div class="message">
                 <div class="message-title">
@@ -604,13 +604,32 @@
         </div>
     </div>
 </footer>
+<div class="modal">
+    <div class="modal-content">
+        <div class="modal-image">
+            <img src="pictures/empty-plate.jpg" alt="">
+        </div>
+        <div class="modal-desc">
+            <p class="modal-title"></p>
+            <p class="modal-price"></p>
+            <p class="modal-text"></p>
+            <div class="modal-form">
+                <input type="number" title="quantity" class="modal-input" value="1">
+                <button class="modal-btn">Add to Cart</button>
 
+            </div>
+        </div>
+        <div class="close-button">
+        <img src="pictures/close.svg" alt="">
+    </div>
+    </div>
 
-<script>
-    document.querySelector('.hamburger-menu').addEventListener('click', function () {
-        document.querySelector('.main-nav').classList.toggle('open');
-        document.querySelector('.hamburger-menu').classList.toggle('open');
-    });
+</div>
+<script src="jquery-3.5.1.min.js">
+
+</script>
+<script src="script.js">
+
 </script>
 
 </body>

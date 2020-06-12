@@ -991,4 +991,79 @@ footer {
     height: 100%;
 }
 
+
 /*Footer end*/
+
+/*modal*/
+.modal{
+    background: rgba(0, 0, 0, 0.46);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+}
+.modal-content{
+    background: white;
+    width: 70%;
+    max-width: 700px;
+    min-width: 320px;
+    min-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close-button img {
+    width: 100%;
+}
+.close-button{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.modal-image{
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+
+
+}
+.modal-image img {
+    width: 100%;
+    display: block;
+}
+.modal-input{
+    border: none;
+    width: 30px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+.modal-btn{
+    border: none;
+    padding: 10px 20px;
+    background: #3c3c3c;
+    color: white;
+    border-radius: 3px;
+}
+.modal-desc{
+    width: 50%;
+
+}
+/*modal end*/
