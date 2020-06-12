@@ -37,4 +37,8 @@ $(document).ready(function () {
     $(".close-button").click(function () {
         $(".modal").removeClass("open");
     });
+    $(".modal").click(function (event) {
+        event.stopPropagation();
+        $(".modal").removeClass("open");
+    })
 });
