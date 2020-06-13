@@ -333,3 +333,25 @@ nav ul {
 }
 
 /*footer End*/
+
+/*modal*/
+
+.modal-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    padding: 20px;
+}
+.modal-desc{
+    width: 70%;
+    margin: 15px;
+}
+.modal-image{
+    width: 200px;
+    height: 200px;
+}
+
+/*modal end*/
