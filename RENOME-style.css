@@ -885,7 +885,7 @@ svg:hover {
     outline: none;
 }
 
-.message-btn button {
+.message-btn #submit-btn {
     width: auto;
     background: #f5f7fa;
     border: none;
@@ -993,7 +993,10 @@ footer {
 
 
 /*Footer end*/
-
+.error{
+    color: red;
+    font-size: 16px;
+}
 /*modal*/
 .modal{
     background: rgba(0, 0, 0, 0.79);
