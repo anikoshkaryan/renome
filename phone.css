@@ -290,7 +290,7 @@ nav ul {
 
 }
 
-.message-btn  button{
+.message-btn #submit-btn{
     font-size: 16px;
     padding: 20px 30px;
 }

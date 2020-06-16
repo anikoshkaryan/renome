@@ -77,5 +77,28 @@ $(document).ready(function () {
     );
     $(".message-btn button").click(function (event) {
         event.preventDefault();
-    })
+    });
+
+  /* $(".modal-btn").click(function () {
+  let cartNum = localStorage.getItem("cardNumber");
+       if (!cartNum) {
+           localStorage.setItem("cardNumber", 1);
+       } else {
+           localStorage.setItem("orderNumber", +cartNum + 1);
+       }
+       $(".card_number").text(localStorage.getItem("cardNumber"));
+
+
+
+
+   });*/
+   $(".modal-input").change(function () {
+       $(".modal-btn").click(function () {
+           $(".card_number").text( Number($(".modal-input").val()));
+       })
+
+
+   });
+
+
 });
