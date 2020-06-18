@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
     $(".menu-dishes-item-picture").click(function () {
         $(".modal").addClass("open");
+        $(".modal-input").val(1);
         let img = $(this).closest(".menu-dishes-item").attr("data-picture");
         let title = $(this).closest(".menu-dishes-item").find(".small-title").text();
         let text = $(this).closest(".menu-dishes-item").find(".menu-desc").text();
@@ -79,26 +80,14 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-  /* $(".modal-btn").click(function () {
-  let cartNum = localStorage.getItem("cardNumber");
-       if (!cartNum) {
-           localStorage.setItem("cardNumber", 1);
-       } else {
-           localStorage.setItem("orderNumber", +cartNum + 1);
-       }
-       $(".card_number").text(localStorage.getItem("cardNumber"));
 
+    $(".modal-btn").click(function () {
+        let $current = $(".card_number").text();
+        $(".card_number").text(Number($(".modal-input").val()) + Number($current));
+    });
+    let now = new Date();
+    $("input[name = 'calendar']").val(`${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`);
 
-
-
-   });*/
-   $(".modal-input").change(function () {
-       $(".modal-btn").click(function () {
-           $(".card_number").text( Number($(".modal-input").val()));
-       })
-
-
-   });
-
-
+    $("input[name = 'calendar']").datepicker();
+    $("input[name = 'time']").ptTimeSelect();
 });
