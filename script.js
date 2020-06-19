@@ -4,11 +4,14 @@ $.validator.setDefaults({
     }
 });
 $(document).ready(function () {
+    /*hamburger_menu*/
     document.querySelector('.hamburger-menu').addEventListener('click', function (event) {
         event.stopPropagation();
         document.querySelector('.main-nav').classList.toggle('open');
         document.querySelector('.hamburger-menu').classList.toggle('open');
     });
+
+
     $(".main-nav a").click(function () {
         let id = $(this).attr("href");
         let scrollElem = $(id);
@@ -22,6 +25,9 @@ $(document).ready(function () {
         $(".hamburger-menu").removeClass("open");
 
     });
+    /*hamburger_menu*/
+    /*menu_dishes_modal*/
+
     $(".menu-dishes-item-picture").click(function () {
         $(".modal").addClass("open");
         $(".modal-input").val(1);
@@ -50,6 +56,9 @@ $(document).ready(function () {
         event.stopPropagation();
 
     });
+    /*menu_dishes_modal*/
+    /*reservations_form*/
+
     $("#form_container").validate(
         {
             rules: {
@@ -76,6 +85,9 @@ $(document).ready(function () {
             }
         }
     );
+    /*reservations_form*/
+    /*shopping-cart*/
+
     $(".message-btn button").click(function (event) {
         event.preventDefault();
     });
@@ -85,9 +97,32 @@ $(document).ready(function () {
         let $current = $(".card_number").text();
         $(".card_number").text(Number($(".modal-input").val()) + Number($current));
     });
+    /*shopping-cart*/
+    /*watch-calendar*/
+
     let now = new Date();
     $("input[name = 'calendar']").val(`${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`);
 
     $("input[name = 'calendar']").datepicker();
     $("input[name = 'time']").ptTimeSelect();
+    /*watch-calendar*/
+    /*dropDawn menu for menu-section-desc*/
+    $(".breakfast").click(function () {
+            $(".breakfast-list").slideToggle("slow");
+        }
+    );
+    $(".lunchOptions").click(function () {
+            $(".lunch-list").slideToggle("slow");
+        }
+    );
+    $(".drinks").click(function () {
+            $(".drinks-list").slideToggle("slow");
+        }
+    );
+      $(".desserts").click(function () {
+          $(".desserts-list").slideToggle("slow");
+      })
+    /*dropDawn menu for menu-section-desc*/
+
+
 });

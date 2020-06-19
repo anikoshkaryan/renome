@@ -341,7 +341,7 @@ svg:hover {
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
-    padding-top: 50px;
+    padding-top: 80px;
     margin: 0 auto;
     max-width: 850px;
 
@@ -381,7 +381,7 @@ svg:hover {
 }
 
 .menu-sections-content {
-    width: 30%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -390,9 +390,9 @@ svg:hover {
     min-height: 40px;
 }
 
-.menu-sections-des {
+.menu-sections-desc {
     font-family: 'Montserrat-bold', sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
 
 }
@@ -1091,7 +1091,43 @@ footer {
 /*modal end*/
 .ui-widget-header {
     border: 1px solid #dddddd;
-    background: #00bcd478;
+    background: rgba(163, 99, 95, 0.87);
     color: #333333;
     font-weight: bold;
 }
+/*dropDawn_menu*/
+.menu-sections-desc{
+    position: relative;
+}
+.menu-list{
+    display: none;
+    position: absolute;
+    margin-top: 15px;
+    width: 50%;
+    border-radius: 5px;
+    z-index: 10;
+    background: rgba(247, 247, 247, 0.65);
+}
+.menu-list li{
+   list-style: none;
+}
+.menu-list li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color:rgba(163, 99, 95, 0.87);
+    transition: width .3s;
+}
+.menu-list li:hover{
+    cursor: pointer;
+    font-size: 25px;
+    list-style: none;
+    background: beige;
+}
+.menu-list li:hover:after{
+    width: 100%;
+    transition: width .3s;
+}
+
+/*dropDawn_menu end*/
