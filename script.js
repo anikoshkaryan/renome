@@ -108,6 +108,16 @@ $(document).ready(function () {
 
     $("input[name = 'calendar']").datepicker();
     $("input[name = 'time']").ptTimeSelect();
+    let selectPeople = $('[name = "people"]');
+    function setNum() {
+        for (let i = 1; i <= 60; i++) {
+            let option = document.createElement("option");
+            selectPeople.append(option);
+            option.value = i;
+            option.innerText = i;
+        }
+    }
+    setNum();
     /*watch-calendar*/
     /*dropDawn menu for menu-section-desc*/
     $(".menu-sections-desc").click(function (ev) {

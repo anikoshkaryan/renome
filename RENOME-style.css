@@ -600,7 +600,7 @@ svg:hover {
     color: #1e2633;
     border-bottom: 2px solid #f5f7fa;
     margin-left: 10px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .reservation-time input {
@@ -612,6 +612,7 @@ svg:hover {
     color: #1e2633;
     border-bottom: 2px solid #f5f7fa;
     margin-left: 10px;
+    padding: 10px 0;
 }
 
 .reservation-people-number select {
@@ -624,8 +625,8 @@ svg:hover {
     border-bottom: 2px solid #f5f7fa;
     background: url("pictures/arrow down.png") no-repeat right;
     margin-left: 10px;
+     padding: 5px 10px;
 }
-
 .reservations-btn {
     margin: 60px auto 0;
     padding: 20px 45px;
