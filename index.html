@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="pictures/logo.png">
     <link rel="stylesheet" href="jquery.ptTimeSelect.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+
 </head>
 <body>
 <header>
@@ -157,7 +159,7 @@
         </div>
         <div class="menu-sections">
             <div class="menu-sections-content">
-                <div>
+                <div class="menu-section-parent">
                     <p class="menu-sections-desc breakfast ">BREAKFAST</p>
                     <ul class="menu-list breakfast-list">
                         <li>BACON,EGG AND CHEESE SANDWICH</li>
@@ -170,7 +172,7 @@
                         <li>CHOCOLATE MILK, COFFEE AND OTHER COFFEE BEVERAGES, HOT CHOCOLATE, JUICE, MILK,TEA</li>
                     </ul>
                 </div>
-                <div>
+                <div class="menu-section-parent">
                     <p class="menu-sections-desc lunchOptions ">LUNCH</p>
                     <ul class="menu-list lunch-list">
                         <li>AVOCADO EGG SALAD SANDWICH</li>
@@ -183,7 +185,7 @@
                         <li>TUNA MANGO AVOCADO SALAD</li>
                     </ul>
                 </div>
-                <div>
+                <div class="menu-section-parent">
                     <p class="menu-sections-desc drinks">DRINKS</p>
                     <ul class="menu-list drinks-list ">
                         <li>WATER</li>
@@ -196,7 +198,7 @@
                         <li>WINE</li>
                     </ul>
                 </div>
-                <div>
+                <div class="menu-section-parent">
                     <p class="menu-sections-desc desserts ">DESSERTS</p>
                     <ul class="menu-list desserts-list ">
                         <li>Mint Oreo Cake</li>
@@ -532,7 +534,7 @@
                             <option>27 People</option>
                             <option>28 People</option>
                             <option>29 People</option>
-                            <option>300 People</option>
+                            <option>30 People</option>
                         </select>
                     </label>
                 </div>
@@ -552,11 +554,19 @@
                 <span class="lunch-small-title">OF THE DAY</span>
             </div>
             <div class="lunch-pictures">
-                <div class="lunch-images">
-                    <div class="lunch-image-container  big-lunch"><img src="pictures/600x400px.png" alt=""></div>
-                    <div class="lunch-image-container  medium-lunch"><img src="pictures/dzvadzex.png" alt=""></div>
-                    <div class="lunch-image-container small-lunch"><img src="pictures/lunch%203.png" alt=""></div>
-                    <div class="lunch-image-container very-small"><img src="pictures/lunch%204.png" alt=""></div>
+                <div class="lunch-images owl-carousel owl-theme">
+                    <div class="lunch-image-container  big-lunch">
+                        <img src="pictures/600x400px.png" alt="">
+                    </div>
+                    <div class="lunch-image-container  medium-lunch">
+                        <img src="pictures/dzvadzex.png" alt="">
+                    </div>
+                    <div class="lunch-image-container small-lunch">
+                        <img src="pictures/lunch%203.png" alt="">
+                    </div>
+                    <div class="lunch-image-container very-small">
+                        <img src="pictures/lunch%204.png" alt="">
+                    </div>
                 </div>
                 <div class="lunch-names">
                     <span class="bread">Homemade baguette</span>
@@ -699,6 +709,7 @@
 <script src="jquery.validate.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="jquery.ptTimeSelect.js"></script>
+<script src="owl.carousel.min.js"></script>
 <script src="script.js">
 
 </script>

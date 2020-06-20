@@ -1,7 +1,6 @@
 /*Header*/
 
 nav ul {
-    background: violet;
     width: 60%;
 }
 
@@ -9,8 +8,8 @@ nav ul {
     margin: 0 10px;
 
 }
-/*Header End*/
 
+/*Header End*/
 
 /*Section Top*/
 .top {
@@ -25,6 +24,7 @@ nav ul {
 .small {
     font-size: 15px;
 }
+
 /*Section Top End*/
 
 /*Section About*/
@@ -33,49 +33,59 @@ nav ul {
     line-height: 20px;
     text-align: justify;
 }
+
 .about-renome-info {
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
 }
-.about-renome-pictures{
+
+.about-renome-pictures {
     width: 100%;
     height: 345px;
     order: 1;
 }
+
 .about-renome-content {
-  min-height: 20vh;
+    min-height: 20vh;
     flex-wrap: wrap;
     padding: 30px 0;
 }
-.middle{
+
+.middle {
     margin: 0;
 }
+
 /*Section About End*/
 
 /*Section Gallery*/
-.gallery{
+.gallery {
     padding: 30px 0;
 }
+
 .gallery-content {
     flex-wrap: wrap;
     min-height: 30vh;
 }
 
-.gallery-titles{
+.gallery-titles {
     margin-bottom: 30px;
 }
+
 .gallery-photos {
     width: 100%;
 }
-.gallery-photos>div{
+
+.gallery-photos > div {
     width: 48%;
     margin: 2px;
 }
+
 .gallery-photos img {
     width: 100%;
     margin: 0;
 }
+
 /*Section Gallery End*/
 
 /*Section Menu*/
@@ -84,24 +94,29 @@ nav ul {
     flex-wrap: wrap;
     padding-top: 20px;
 }
-.menu-info{
+
+.menu-info {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
 }
+
 .menu-desc {
     line-height: 20px;
     font-size: 15px;
     text-align: justify;
 }
-.menu-pictures{
+
+.menu-pictures {
     width: 100%;
     height: 315px;
 
 }
+
 .menu-sections-content {
-   width: 90%;
+    width: 90%;
 }
+
 .menu-dishes-content {
     width: 100%;
 }
@@ -109,24 +124,27 @@ nav ul {
 .title {
     width: 100%;
 }
+
 /*Section Menu End*/
 
 /*Section Menu-dishes */
 
-.menu-desc{
+.menu-desc {
     font-size: 16px;
 }
-.title{
+
+.title {
     padding: 0;
     text-align: center;
     width: 100%;
     margin: 30px 0;
 }
-.menu-dishes-item{
+
+.menu-dishes-item {
     flex-wrap: wrap;
 }
 
-.menu-dishes-item::after{
+.menu-dishes-item::after {
     content: '';
     width: 40%;
     height: 1px;
@@ -134,38 +152,41 @@ nav ul {
     display: block;
     margin: 30px auto 0;
 }
-.price{
+
+.price {
     width: 100%;
     text-align: right;
 }
-    /*Section Menu-dishes End*/
 
+/*Section Menu-dishes End*/
 
 /*Section Perfect Place*/
-.perfect-place-content{
+.perfect-place-content {
     min-height: 50vh;
     flex-wrap: wrap;
     padding: 30px 0;
 }
-.perfect-place-title{
+
+.perfect-place-title {
     width: 100%;
 }
-.perfect-place-picture{
+
+.perfect-place-picture {
     width: 100%;
     margin: 10px 0;
 }
 
-.cafe{
+.cafe {
     width: 100%;
 }
 
 /*Section Perfect Place End*/
 
-
 /*reservations*/
-.reservations{
+.reservations {
     padding: 0;
 }
+
 .reservations-info {
     width: 100%;
     margin-left: 0;
@@ -173,11 +194,13 @@ nav ul {
     margin-bottom: 30px;
     text-align: justify;
 }
+
 .reservations-desc {
     line-height: 20px;
     font-size: 20px;
 
 }
+
 .reservations-content {
     min-height: 20vh;
     flex-wrap: wrap;
@@ -187,19 +210,23 @@ nav ul {
     flex-wrap: wrap;
     width: 80%;
 }
+
 .make-reservation-content > div {
     width: 100%;
     margin: 20px 0;
 }
+
 .make-reservation-content select {
     width: 85%;
     vertical-align: super;
     outline: none;
 }
-.reservations-pictures{
+
+.reservations-pictures {
     width: 100%;
     height: 300px;
 }
+
 /*Reservations End*/
 
 /* section lunch*/
@@ -207,59 +234,67 @@ nav ul {
     min-height: 20vh;
 }
 
-.lunch-images{
+/*.lunch-images{
     display: flex;
     flex-wrap: wrap;
     min-height: auto;
     position: static;
     justify-content: center;
     align-items: center;
-}
-.lunch-pictures{
+ }
+*/
+/*.lunch-pictures{
     width: 100%;
 }
 .lunch-image-container{
-   transform: none;
+    transform: none;
     width: 48%;
     position: static;
     opacity: 1;
     margin: 1px;
-}
+}*/
 .lunch {
     padding: 8px 0;
 }
+
 .lunch-title {
     width: 100%;
     padding: 0;
 }
-.lunch-names{
+
+.lunch-names {
     width: 100%;
 }
-/* section lunch end*/
 
+/* section lunch end*/
 
 /*Section contact */
 .contact {
     padding: 0;
 }
+
 .contact-content {
     min-height: 20vh;
     flex-wrap: wrap;
-   padding-top: 20px;
+    padding-top: 20px;
 }
-.contact-info{
+
+.contact-info {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
 }
+
 .contact-desc {
-    line-height:20px;
+    line-height: 20px;
     font-size: 16px;
 }
-.contact-pictures{
+
+.contact-pictures {
     width: 100%;
     min-height: 315px;
 }
+
 .contact-details-content {
     min-height: 20vh;
     flex-wrap: wrap;
@@ -269,62 +304,67 @@ nav ul {
 
 /*Contact-details*/
 
-.input-field{
+.input-field {
     width: 100%;
 }
 
-.form-container input{
+.form-container input {
     padding: 20px 0;
 }
-.message-selector{
+
+.message-selector {
     width: 100%;
 }
 
-.message-area{
+.message-area {
     width: 100%;
 }
 
-.message-btn{
+.message-btn {
     display: block;
     margin: 20px auto;
 
 }
 
-.message-btn #submit-btn{
+.message-btn #submit-btn {
     font-size: 16px;
     padding: 20px 30px;
 }
 
-.tools-container{
+.tools-container {
     width: 100%;
     text-align: center;
 }
-    /*Contact-details End*/
 
+/*Contact-details End*/
 
 /*footer*/
 
-.footer-content{
+.footer-content {
     width: 100%;
     max-width: 300px;
     flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     width: 100%;
     text-align: center;
 }
-.copyright{
+
+.copyright {
     margin: 20px 0;
     width: 100%;
     text-align: center;
     font-size: 16px;
 }
-.renome-sources{
+
+.renome-sources {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
-.follow{
+
+.follow {
     display: block;
     width: 100%;
     text-align: center;
@@ -336,7 +376,7 @@ nav ul {
 
 /*modal*/
 
-.modal-content{
+.modal-content {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -345,11 +385,24 @@ nav ul {
     min-height: 300px;
     padding: 20px;
 }
-.modal-desc{
+
+.modal-desc {
     margin: 15px;
 }
-.modal-image{
+
+.modal-image {
     margin: 50px auto 0;
 }
 
 /*modal end*/
+.menu-list.desserts-list {
+    left: -150px;
+}
+
+.menu-list.drinks-list {
+    left: -100px;
+}
+
+.menu-list.lunch-list {
+    left: -80px;
+}

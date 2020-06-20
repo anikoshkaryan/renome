@@ -23,6 +23,8 @@ $(document).ready(function () {
     $("body").click(function () {
         $(".main-nav").removeClass("open");
         $(".hamburger-menu").removeClass("open");
+        $(".menu-list").slideUp("slow");
+
 
     });
     /*hamburger_menu*/
@@ -102,27 +104,35 @@ $(document).ready(function () {
 
     let now = new Date();
     $("input[name = 'calendar']").val(`${now.getMonth() + 1}/${now.getDate()}/${now.getFullYear()}`);
+    $("input[name = 'time']").val(`${now.getHours()}:${now.getMinutes()}`);
 
     $("input[name = 'calendar']").datepicker();
     $("input[name = 'time']").ptTimeSelect();
     /*watch-calendar*/
     /*dropDawn menu for menu-section-desc*/
-    $(".breakfast").click(function () {
-            $(".breakfast-list").slideToggle("slow");
-        }
-    );
-    $(".lunchOptions").click(function () {
-            $(".lunch-list").slideToggle("slow");
-        }
-    );
-    $(".drinks").click(function () {
-            $(".drinks-list").slideToggle("slow");
-        }
-    );
-      $(".desserts").click(function () {
-          $(".desserts-list").slideToggle("slow");
-      })
+    $(".menu-sections-desc").click(function (ev) {
+        ev.stopPropagation();
+        let list = $(this).closest("div").find(".menu-list");
+        $(".menu-list").not(list).slideUp("slow");
+        list.slideToggle("slow");
+
+    });
+    $(".menu-list").click(function (ev) {
+        ev.stopPropagation();
+    });
     /*dropDawn menu for menu-section-desc*/
+    /*slider*/
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    })
+    /*slider end*/
 
 
 });

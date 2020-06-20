@@ -34,7 +34,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat-Regular.eot');
@@ -46,7 +45,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 
 /*General*/
 
@@ -99,9 +97,11 @@ nav ul {
     align-items: center;
 
 }
+
 .card span {
     font-family: sans-serif;
 }
+
 nav ul {
     opacity: 0;
     visibility: hidden;
@@ -152,7 +152,6 @@ nav li:hover {
 svg:hover {
     fill: #985e5b;
 }
-
 
 .search svg {
     width: 15px;
@@ -352,7 +351,6 @@ svg:hover {
     text-align: right;
 }
 
-
 .menu-desc {
     font-family: 'Montserrat-Regular', sans-serif;
     color: #404040;
@@ -521,7 +519,6 @@ svg:hover {
     transform: translate(0, -15%);
 }
 
-
 /*Section Perfect Place End*/
 
 /*reservations*/
@@ -570,7 +567,6 @@ svg:hover {
     line-height: 30px;
     font-size: 12px;
 }
-
 
 .make-reservation {
     padding: 40px 0;
@@ -683,7 +679,7 @@ svg:hover {
     margin-top: 20px;
 }
 
-.lunch-images {
+/*.lunch-images {
     position: relative;
     min-height: 245px;
 }
@@ -741,7 +737,7 @@ svg:hover {
     justify-content: space-between;
     align-items: center;
 
-}
+}*/
 
 .bread {
     font-family: 'Montserrat-bold', sans-serif;
@@ -779,7 +775,6 @@ svg:hover {
     width: 35%;
     text-align: right;
 }
-
 
 .contact-desc {
     font-family: 'Montserrat-Regular', sans-serif;
@@ -989,14 +984,14 @@ footer {
     height: 100%;
 }
 
-
 /*Footer end*/
-.error{
+.error {
     color: red;
     font-size: 16px;
 }
+
 /*modal*/
-.modal{
+.modal {
     background: rgba(0, 0, 0, 0.79);
     position: fixed;
     width: 100%;
@@ -1007,11 +1002,13 @@ footer {
     opacity: 0;
     visibility: hidden;
 }
-.modal.open{
+
+.modal.open {
     visibility: visible;
     opacity: 1;
 }
-.modal-content{
+
+.modal-content {
     background: white;
     width: 70%;
     max-width: 700px;
@@ -1020,7 +1017,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     border-radius: 30px;
     padding: 30px;
     box-sizing: border-box;
@@ -1028,61 +1025,70 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+
 .close-button img {
     width: 100%;
 }
-.close-button{
+
+.close-button {
     width: 20px;
     position: absolute;
     top: 20px;
     right: 20px;
     cursor: pointer;
 }
-.modal-image{
+
+.modal-image {
     overflow: hidden;
     width: 300px;
     height: 300px;
 
-
 }
+
 .modal-image img {
     width: 100%;
     display: block;
 }
-.modal-input{
+
+.modal-input {
     border: none;
     width: 40px;
     padding: 5px;
     font-size: 20px;
 
 }
-.modal-btn{
+
+.modal-btn {
     border: none;
     padding: 10px 20px;
     background: #3c3c3c;
     color: white;
     border-radius: 3px;
 }
-.modal-desc{
+
+.modal-desc {
     width: 50%;
     flex-grow: 1;
     margin: 0 30px;
 
 }
-.modal-text{
+
+.modal-text {
     padding: 15px;
     color: #404040;
     font-family: 'Montserrat-Regular', sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
-.modal-title{
+
+.modal-title {
     color: rgba(139, 0, 0, 0.9);
     font-family: 'Montserrat-bold', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
-.modal-price{
+
+.modal-price {
     font-size: 25px;
     color: firebrick;
 
@@ -1095,37 +1101,49 @@ footer {
     color: #333333;
     font-weight: bold;
 }
+
 /*dropDawn_menu*/
-.menu-sections-desc{
+.menu-section-parent {
     position: relative;
 }
-.menu-list{
+
+.menu-list {
     display: none;
     position: absolute;
     margin-top: 15px;
-    width: 50%;
+    width: 100%;
+    min-width: 300px;
+    max-width: 600px;
     border-radius: 5px;
     z-index: 10;
-    background: rgba(247, 247, 247, 0.65);
+    background: rgba(247, 247, 247, 0.91);
+    padding: 10px;
+    box-sizing: border-box;
 }
-.menu-list li{
-   list-style: none;
+
+.menu-list li {
+    list-style: none;
+    word-break: break-word;
+    margin: 10px 0;
+    font-family: 'Montserrat',sans-serif;
 }
-.menu-list li::after{
+
+.menu-list li::after {
     content: "";
     display: block;
     width: 0;
     height: 2px;
-    background-color:rgba(163, 99, 95, 0.87);
+    background-color: rgba(163, 99, 95, 0.87);
     transition: width .3s;
 }
-.menu-list li:hover{
+
+.menu-list li:hover {
     cursor: pointer;
     font-size: 25px;
-    list-style: none;
     background: beige;
 }
-.menu-list li:hover:after{
+
+.menu-list li:hover:after {
     width: 100%;
     transition: width .3s;
 }
